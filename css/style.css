@@ -7,6 +7,7 @@
   --foot-grey: #282828;
   --txt-grey: #6a6a6a;
   --lime: #adff2f;
+  --btn-green : #79db74;
   --l-txt: 1.6rem;
   --m-txt: 1rem;
   --s-txt: 0.8rem;
@@ -21,6 +22,10 @@
 body {
   color: var(--white);
   font-family: "Montserrat", sans-serif;
+}
+
+.pos-rel {
+    position: relative;
 }
 
 .d-flex {
@@ -63,7 +68,7 @@ body {
 }
 
 .m-b {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -127,8 +132,12 @@ width: calc(100vw - 230px);
 .main-content aside a {
     border: 1px solid var(--white);
     padding: 0.9rem 2.5rem;
-    margin-right: 1.5rem;
+    margin-right: 2rem;
     border-radius: 2.5rem;
+}
+
+.main-content aside a:hover{
+    transform: scale(1.1);
 }
 
 /* inner content */
@@ -138,7 +147,7 @@ width: calc(100vw - 230px);
 
 .inner-menu ul li a{
     color: var(--txt-grey);
-    padding: 0.5rem 2.3rem;
+    padding: 0.5rem 1rem;
 }
 
 .inner-menu ul li a:hover::after {
@@ -153,10 +162,19 @@ width: calc(100vw - 230px);
 /* playlist */
 .playlist {
     padding: 2rem;
+    line-height: 1.50;
 }
 
 .playlist h2 {
     font-size: var(--l-txt);
+}
+
+.playlist p {
+    color: var(--txt-grey);
+}
+
+.small-txt a {
+    color: var(--txt-grey);
 }
 
 .cards{
@@ -165,17 +183,47 @@ width: calc(100vw - 230px);
 
 .card {
     width: calc(100% / 6);
-    line-height: 1.50;
+    
     padding: 0.5rem;
 }
 
 .img-card img {
+    display: block;
     width: 100%;
     max-width: 100%;
 }
 
+.radius-card {
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+}
 
+.hid-btn  {
+    
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+    background-color: var(--btn-green);
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    display: none;
+    box-shadow: 0px 5px 3px var(--foot-grey);
+}
 
+.hid-btn a {
+    color: var(--main-black);
+}
+
+.card:hover img {
+    opacity: 0.5;
+}
+
+.card:hover .hid-btn {
+    display: block;
+}
 
 
 
@@ -189,4 +237,56 @@ width: calc(100vw - 230px);
   position: fixed;
   bottom: 0;
   z-index: 2000;
+}
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width: 1200px) {
+    .cards {
+        flex-flow: wrap;
+    }
+
+    .card {
+        width: calc(100% / 4);
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+    .cards {
+        flex-flow: wrap;
+    }
+
+    .card {
+        width: calc(100% / 3);
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+    .cards {
+        flex-flow: wrap;
+    }
+
+    .card {
+        width: calc(100% / 2);
+    }
+    
+}
+
+@media screen and (max-width: 580px) {
+    .cards {
+        flex-flow: wrap;
+    }
+
+    .card {
+        width: calc(100% / 1);
+    }
+    
 }
