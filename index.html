@@ -23,7 +23,7 @@
         <!-- contiene tutto -->
 
         <main>
-            <nav>
+            <nav class="pos-rel">
                 <div class="logo-nav m-l">
                     <img src="img/logo.svg" alt="logo">
                 </div>
@@ -38,8 +38,10 @@
 
                 <div class="newplay-nav m-t m-l">
                     <h3 class="upp">playlist</h3>
-                   <span id="plus"><a href="#"><i class="fa-solid fa-plus"></i></a></span> 
-                   <span class="small-txt"> <a href="#">Crea Playlist</a></span>
+                   <div class="np-nav">
+                       <a id="plus" href="#"><i class="fa-solid fa-plus"></i></a>
+                       <span class="small-txt"> <a href="#">Crea Playlist</a></span>
+                   </div>
                 </div>
                 <div class="name-play m-l">
                     <ul>
@@ -52,7 +54,10 @@
                         <li><a class="small-txt" href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
-                <div></div>
+                <div id="foot-nav" class="m-l">
+                    <p class="small-txt"> <a href="#"><i class="fa-regular fa-circle-down"></i> Installa app</a></p>
+                    <hr>
+                </div>
             </nav>
 
             <section class="main-content">

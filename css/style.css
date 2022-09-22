@@ -261,13 +261,12 @@ ul li:hover a {
     color: var(--nav-black);
 }
 
-
-.newplay-nav  a:hover {
-    color: var(--white);
+.np-nav:hover #plus{
+    background-color: var(--white);
 }
 
-.newplay-nav #plus:hover {
-    background-color: var(--white);
+.np-nav:hover  a {
+    color: var(--white);
 }
 
 .name-play ul li{
@@ -282,6 +281,23 @@ ul li:hover a {
 .name-play ul::-webkit-scrollbar {
     display: none;
 }
+
+#foot-nav {
+    position: absolute;
+    bottom: 0;
+}
+
+#foot-nav hr{
+    height: 1px;
+    margin: 10px 0;
+    width: 200px;
+    border-color: var(--txt-grey);
+}
+#foot-nav a:hover {
+    color: var(--white);
+}
+
+
 
 
 
