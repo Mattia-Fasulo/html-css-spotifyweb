@@ -7,7 +7,7 @@
   --foot-grey: #282828;
   --txt-grey: #6a6a6a;
   --lime: #adff2f;
-  --l-txt: 1.5rem;
+  --l-txt: 1.6rem;
   --m-txt: 1rem;
   --s-txt: 0.8rem;
 }
@@ -60,6 +60,10 @@ body {
 
 .m-t {
     margin-top: 2rem;
+}
+
+.m-b {
+    margin-bottom: 2rem;
 }
 
 a {
@@ -116,7 +120,10 @@ width: calc(100vw - 230px);
   height: 100%;
 }
 
-/* main content */
+
+
+/* section main content */
+/* aside */
 .main-content aside a {
     border: 1px solid var(--white);
     padding: 0.9rem 2.5rem;
@@ -124,6 +131,7 @@ width: calc(100vw - 230px);
     border-radius: 2.5rem;
 }
 
+/* inner content */
 .inner-menu {
     margin-top: 100px;
 }
@@ -142,6 +150,29 @@ width: calc(100vw - 230px);
     margin: 4px auto;
 }
 
+/* playlist */
+.playlist {
+    padding: 2rem;
+}
+
+.playlist h2 {
+    font-size: var(--l-txt);
+}
+
+.cards{
+    margin-left: -0.5rem;
+}
+
+.card {
+    width: calc(100% / 6);
+    line-height: 1.50;
+    padding: 0.5rem;
+}
+
+.img-card img {
+    width: 100%;
+    max-width: 100%;
+}
 
 
 
