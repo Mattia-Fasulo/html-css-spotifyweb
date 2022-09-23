@@ -23,41 +23,63 @@
         <!-- contiene tutto -->
 
         <main>
-            <nav class="pos-rel">
-                <div class="logo-nav m-l">
-                    <img src="img/logo.svg" alt="logo">
+            <nav >
+                <div class="large-nav d-flex column">
+                    <div class="logo-nav">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    <div class="menu-nav">
+                        <ul>
+                            <li class="small-txt"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                            <li class="small-txt"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a></li>
+                            <li class="small-txt"><a href="#"><i class="fa-solid fa-lines-leaning"></i> La tua libreria</a></li>
+                        </ul>
+                    </div>
+                    <div class="playlist-nav">
+                        <h3 class="upp">playlist</h3>
+                        <div class="add-play">
+                            <a href=""><span class="small-txt">Crea playlist</span></a>
+                        </div>
+                        <div class="scroll-list">
+                            <ul class="small-txt">
+                                <li><a href="#">Nome Paylist</a></li>
+                                <li><a href="#">Nome Paylist</a></li>
+                                <li><a href="#">Nome Paylist</a></li>
+                                <li><a href="#">Nome Paylist</a></li>
+                                <li><a href="#">Nome Paylist</a></li>
+                                <li><a href="#">Nome Paylist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot-nav">
+                        <a class="small-txt" href="#">
+                            <i class="fa-solid fa-circle-down"></i> Installa app
+                        </a>
+                        <hr>
+                        <i class="fa-regular fa-circle-user"></i> John Doe
+                    </div>
                 </div>
-
-                <div class="menu-nav">
-                    <ul>
-                        <li class="small-txt"><a href="#"><i class="m-l fa-solid fa-house"></i> Home</a></li>
-                        <li class="small-txt"><a href="#"><i class="m-l fa-solid fa-magnifying-glass"></i> Cerca</a></li>
-                        <li class="small-txt"><a href="#"><i class="m-l fa-solid fa-chart-simple"></i> La tua libreria</a></li>
-                    </ul>
+                <div class="small-menu d-flex column just-btw small-txt">
+                    <div class="small-top">
+                        <img id="small-logo" src="img/logo-small.svg" alt="small-logo">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-lines-leaning"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="small-bot d-flex column">
+                        <a href="#"><i class="fa-solid fa-circle-down"></i></a>
+                        <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                    </div>
                 </div>
-
-                <div class="newplay-nav m-t m-l">
-                    <h3 class="upp">playlist</h3>
-                   <div class="np-nav">
-                       <a id="plus" href="#"><i class="fa-solid fa-plus"></i></a>
-                       <span class="small-txt"> <a href="#">Crea Playlist</a></span>
-                   </div>
-                </div>
-                <div class="name-play m-l">
-                    <ul>
-                        <li><a class="small-txt" href="#">Nome Playlist</a></li>
-                        <li><a class="small-txt" href="#">Nome Playlist</a></li>
-                        <li><a class="small-txt" href="#">Nome Playlist</a></li>
-                        <li><a class="small-txt" href="#">Nome Playlist</a></li>
-                        <li><a class="small-txt" href="#">Nome Playlist</a></li>
-                        <li><a class="small-txt" href="#">Nome Playlist</a></li>
-                        <li><a class="small-txt" href="#">Nome Playlist</a></li>
-                    </ul>
-                </div>
-                <div id="foot-nav" class="m-l">
-                    <p class="small-txt"> <a href="#"><i class="fa-regular fa-circle-down"></i> Installa app</a></p>
-                    <hr>
-                </div>
+                
             </nav>
 
             <section class="main-content">
@@ -198,7 +220,43 @@
 
 
         </main>
-        <div class="playbar"></div>
+        <div class="playbar d-flex just-btw al-cnt">
+            <div class="left-foot d-flex just-btw al-cnt">
+                <div class="d-flex pad-10">
+                    <div class="img-foot">
+                        <img src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="d-flex column just-cnt pad-10">
+                        <p class="small-txt whi">Sinistar</p>
+                        <p class="small-txt">Brano nome</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><i class="gre fa-regular fa-heart m-l"></i></a>
+                    <a href="#"><i class="gre fa-regular fa-folder m-l"></i></a>
+                </div>
+            </div>
+            <div class="cnt-foot d-flex column al-cnt">
+                <div class="d-flex al-cnt">
+                    <a href="#"><i class="gre fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="gre fa-solid fa-backward-step m-l"></i></a>
+                    <a href="#"><i class="gre fa-regular fa-circle-play m-l fs-25"></i></a>
+                    <a href="#"><i class="gre fa-solid fa-forward-step m-l"></i></a>
+                    <a href="#"><i class="gre fa-solid fa-rotate-right m-l"></i></a>
+                </div>
+                <div class="d-flex small-txt m-t-s">
+                    <span>0:25</span>
+                    <input class="m-l" type="range">
+                    <span class="m-l">4:35</span>
+                </div>
+            </div>
+            <div class="right-foot d-flex m-r">
+                <a href="#"><i class="gre fa-solid fa-bars"></i></a>
+                <a href="#"><i class="gre fa-solid fa-display m-l "></i></a>
+                <a href="#"><i class="gre fa-solid fa-volume-high m-l"></i></a>
+                <input class="m-l" type="range">
+            </div>
+        </div>
     </div>
 </body>
 
