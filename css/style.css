@@ -81,6 +81,10 @@ body {
     margin-right: 1rem;
 }
 
+.m-r-l {
+    margin-right: 2rem;
+}
+
 .m-l {
   margin-left: 1rem;
 }
@@ -96,6 +100,15 @@ body {
 .m-b {
   margin-bottom: 1rem;
 }
+
+.vh-25 {
+    width: 24vh;
+}
+
+.vh-50 {
+    width: 50vh;
+}
+
 
 a {
   color: var(--white);
@@ -348,8 +361,8 @@ aside {
 }
 
 .scroll-list {
-    height: 80%;
-    overflow-y: auto;
+   
+    overflow-y: scroll;
 }
 
 .scroll-list ul li {
@@ -416,7 +429,7 @@ aside {
 
 /* footer */
 .playbar {
-  width: 100%;
+  width: 100vw;
   height: 95px;
   background-color: var(--foot-grey);
   position: fixed;
@@ -443,7 +456,7 @@ aside {
   .right-foot input[type="range"] {
     -webkit-appearance: none;
     margin-top: 8px;
-    width: 100px;
+    width: 100%;
     height: 2px;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
@@ -479,23 +492,8 @@ aside {
     width: calc(100% / 3);
   }
 
-  .left-foot {
-    width: 30%;
-    min-width: 150px;
-  }
-
-  .cnt-foot {
-    width: 40%;
-    min-width: 150px;
-  }
-
-  .right-foot {
-    width: 20%;
-    min-width: 150px;
-  }
-
-  .cnt-foot input[type="range"]{
-    width: 100%;
+  .cnt-foot input[type="range"] {
+    width: 300px;
   }
 
 }
@@ -507,6 +505,10 @@ aside {
 
   .card {
     width: calc(100% / 2);
+  }
+
+  .cnt-foot input[type="range"] {
+    width: 100%;
   }
 }
 
